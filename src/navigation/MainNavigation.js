@@ -8,6 +8,7 @@ import Saved from '../screens/Saved';
 import Booking from '../screens/Booking';
 import Profile from '../screens/Profile';
 import FontAwesome from "react-native-vector-icons/FontAwesome5";
+import Search from '../screens/Search';
 
 
 const Tab = createBottomTabNavigator();
@@ -77,6 +78,7 @@ function BottomTabs(){
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Main" component={BottomTabs} options={{headerShown:false}}/>
+        <Stack.Screen name="Search" component={Search} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   )
